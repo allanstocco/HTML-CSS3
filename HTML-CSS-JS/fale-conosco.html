@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS-JS</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <script src="_javascript/funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="_css/form.css" />
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>HTML, CSS, JS</h1>
+                <h2>Playing with them in a old way!</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/contato.png" />
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagens/Home.png')"
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html"><a
+                                href="specs.html">Details</a></li>
+                    <li onmouseover="mudaFoto('_imagens/Fotos.png')"
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html"><a
+                                href="fotos.html">Codes</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html"><a
+                                href="multimidia.html">Watch About</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html"><a
+                                href="fale-conosco.html">E-mail Me!</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpofull">
+            <article id="noticiaprin">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>HTML, CSS, JS</h3>
+                        <h1>This is just an example form page. Although, on submit button you'll be redirected straight
+                            to email me!</h1>
+                        <h2>Allan S. Rezende</h2>
+                        <h3 class="direita"></h3>
+                    </hgroup>
+                </header>
+
+                <form method="post" id="fContato" action="mailto:allanstocco@hotmail.com" oninput="calc_total();">
+                    <fieldset id="usuario">
+                        <legend>Register</legend>
+                        <p><label for="cNome">Name:</label><input type="text" name="tNome" id="cNome" size="20"
+                                maxlength="15" placeholder="First Name" /></p>
+                        <p><label for="cSenha">Password:</label><input type="password" name="tSenha" id="cSenha"
+                                size="8" maxlength="8" placeholder="8 Dig." /></p>
+                        <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="30"
+                                maxlength="50" /></p>
+                        <fieldset id="sexo">
+                            <legend>Gender</legend>
+                            <input type="radio" name="tSexo" id="cMasc" /><label for="cMasc">Male</label><br>
+                            <input type="radio" name="tSexo" id="cFem" /><label for="cFem">Female</label>
+                        </fieldset>
+                        <p>Date of Birth:<input type="date" name="tNasc" id="cNasc" /></p>
+                    </fieldset>
+
+                    <fieldset id="endereco">
+                        <legend>Address</legend>
+                        <p><label for="cRua">First Address:</label><input type="text" name="tRua" id="cRua" size="30" />
+                        </p>
+                        <p><label for="cNum">Postcode:</label><input type="number" name="tNum" id="cNum" min="0"
+                                max="99999" /></p>
+                        <p><label for="cEst">County:</label><select name="tEst" id="cEst">
+                                <optgroup label="Region North">
+                                    <option value="">e.g</option>
+                                    <option value="">e.g</option>
+                                    <option value="">e.g</option>
+                                </optgroup>
+                                <optgroup label="Region South">
+                                    <option value="">e.g</option>
+                                    <option value="">e.g</option>
+                                    <option value="">e.g</option>
+                                </optgroup>
+                            </select></p>
+                        <p><label for="cCid">Town:</label><input type="text" name="tCid" id="cCid" size="20"
+                                maxlength="40" placeholder="Your city" list="cidades" /></p>
+                        <datalist id="cidades">
+                            <option value="London"></option>
+                            <option value="Birminghan"></option>
+                            <option value="Liverpool"></option>
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset id="mensagem">
+                        <legend>User Message</legend>
+                        <p><label for="cUrg">Urgent Needs: Min</label><input type="range" name="tUrg" id="cUrg" min="0"
+                                max="10" step="2" value="0" />Max</p>
+                        <p><label for="cMen">Message:</label><textarea name="tMsg" id="cMsg" cols="45" rows="5"
+                                placeholder="Write your message here..." style="text-align: center;"></textarea></p>
+                    </fieldset>
+
+                    <fieldset id="pedido">
+                        <legend>Get me some money!</legend>
+                        <p><input type="checkbox" name="tPed" id="cPed" /><label for="cPed">I would like to accept
+                                choosing the giving  of certain value amount!</label></p>
+                        <p><label for="cQtd">Quantity of wishes:</label><input type="number" name="tQtd" id="cQtd"
+                                min="0" max="5" value="0" /></p>
+                        <p><label for="cPrec">Amount Value per Wish: &#163; </label><input type="text" name="tPrec"
+                                id="cPrec" style="text-align: center;" placeholder="total amount" readonly /></p>
+                    </fieldset>
+                    <input type="submit" name="tEnviar" value="Send" />
+                </form>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p><a href="https://api.whatsapp.com/send?phone=+4407460031651&text=Hi!, Falling in love with all the informations through this website."
+                    target="_blank">Whatsapp</a> | <a href="https://www.instagram.com/allansrezende/"
+                    target="_blank">Instagram</a></p>
+        </footer>
+    </div>
+
+
+
+
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd * 100;
+            document.getElementById('cPrec').value = tot;
+        }
+    </script>
+</body>
+
+</html>

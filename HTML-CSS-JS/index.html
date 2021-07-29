@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS-JS</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <script src="_javascript/funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="_css/media.css" />
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>HTML, CSS, JS</h1>
+                <h2>Playing with them in a old way!</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/home.png" />
+
+            <nav id="menu">
+                <h1>Main Menu</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagens/Home.png')"
+                        onmouseout="mudaFoto('_imagens/Home.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/Home.png')"><a href="index.html"><a
+                                href="specs.html">Details</a></li>
+                    <li onmouseover="mudaFoto('_imagens/Fotos.png')"
+                        onmouseout="mudaFoto('_imagens/Home.png')"><a href="index.html"><a
+                                href="fotos.html">Codes</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/Home.png')"><a href="index.html"><a
+                                href="multimidia.html">Watch About</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('_imagens/Home.png')"><a href="index.html"><a
+                                href="fale-conosco.html">E-mail Me!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo">
+            <article id="noticiaprin">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>From Wikipedia, the free encyclopedia.</h3>
+                        <h1>HyperText Markup Language</h1>
+                        <h2>Allan S. Rezende</h2>
+                        <h3 class="direita">Updated on 04/09/2020</h3>
+                    </hgroup>
+                </header>
+
+                <h2>Whats that???</h2>
+                <p><b>HyperText Markup Language</b> or HTML is the standard markup language for documents designed to be
+                    displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS)
+                    and scripting languages such as JavaScript. HTML elements are the building blocks of HTML pages.
+                    With HTML constructs, images and other objects such as interactive forms may be embedded into the
+                    rendered page. HTML provides a means to create structured documents by denoting structural semantics
+                    for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are
+                    delineated by tags, written using angle brackets. Tags such as &lt;img /&gt; and &lt;input /&gt;
+                    directly introduce content into the page. Other tags such as surround and provide information about
+                    document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but
+                    use them to interpret the content of the page.</p>
+
+                <figure class="foto-legenda">
+                    <img src="_imagens/HTMLfirst.png" />
+                    <figcaption>
+                        <h3>HTML</h3>
+                        <p>HyperText Markup Language</p>
+                    </figcaption>
+                </figure>
+
+                <h2>Development</h2>
+                <p>In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system
+                    for CERN researchers to use and share documents. In 1989, Berners-Lee wrote a memo proposing an
+                    Internet-based hypertext system.[3] Berners-Lee specified HTML and wrote the browser and server
+                    software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau
+                    collaborated on a joint request for funding, but the project was not formally adopted by CERN. In
+                    his personal notes[4] from 1990 he listed[5] "some of the many areas in which hypertext is used" and
+                    put an encyclopedia first.</p>
+
+                <h2>Let us look at a few of the tags which were added to HTML5</h2>
+                <table id="tabelaspec">
+                    <caption>Tabela Técnica do Google Glass <span>Nov/2020</span></td>
+                    </caption>
+                    <tr>
+                        <td class="ce">Email</td>
+                        <td class="cd">New HTML5 tag, which was added, is the input element of type email. This is a
+                            form tag, although it could be used outside of a form tag also. This tag checks the
+                            validation of the input value. It checks whether the value inserted is a valid email.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="ce">Audio Tag and Semantic Tags</td>
+                        <td class="cd">This is a new audio tag that was implemented in HTML5. This tag helps to add
+                            audio to our web page. We can use this tag to embed an audio clip into a web page. This
+                            audio tag could be played on a webpage.</td>
+                    </tr>
+                    <tr>
+                        <td class="cd">Semantic tags are also known as structural tags. Structural tags are the tags
+                            that provide structure to the HTML page. It helps it divide the HTML page into different
+                            structures. These structures get combined into an HTML page itself to form an HTML web page.
+                            Few of the important HTML semantic tags are figcaption, &lt;header&gt;, &lt;footer&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">Password </td>
+                        <td class="cd">This is another form tag that was added to receive a password from the user.</td>
+                    </tr>
+                    <tr>
+                        <td class="ce">Section tag </td>
+                        <td class="cd">This tag is used to semantic a section in an HTML page. A section tag represents
+                            a section on a web page.</td>
+                    </tr>
+                </table>
+
+                <h2>Delivery</h2>
+                <p>The World Wide Web is composed primarily of HTML documents transmitted from web servers to web
+                    browsers using the Hypertext Transfer Protocol (HTTP). However, HTTP is used to serve images, sound,
+                    and other content, in addition to HTML. To allow the web browser to know how to handle each document
+                    it receives, other information is transmitted along with the document. This meta data usually
+                    includes the MIME type (e.g., text/html or application/xhtml+xml) and the character encoding (see
+                    Character encoding in HTML).
+
+                    In modern browsers, the MIME type that is sent with the HTML document may affect how the document is
+                    initially interpreted. A document sent with the XHTML MIME type is expected to be well-formed XML;
+                    syntax errors may cause the browser to fail to render it. The same document sent with the HTML MIME
+                    type might be displayed successfully, since some browsers are more lenient with HTML.</p>
+
+                <h2>HTML Application</h2>
+                <p>An HTML Application (HTA; file extension ".hta") is a Microsoft Windows application that uses HTML
+                    and Dynamic HTML in a browser to provide the application's graphical interface. A regular HTML file
+                    is confined to the security model of the web browser's security, communicating only to web servers
+                    and manipulating only web page objects and site cookies. An HTA runs as a fully trusted application
+                    and therefore has more privileges, like creation/editing/removal of files and Windows Registry
+                    entries. Because they operate outside the browser's security model, HTAs cannot be executed via
+                    HTTP, but must be downloaded (just like an EXE file) and executed from local file system.
+                </p>
+                <video id="index1" controls="controls">
+                    <source src="../_media/how-it-feels.mp4" type="video/mp4" />
+                </video>
+
+            </article>
+        </section>
+
+        <aside id="lateral">
+            <h1>Cascading Style Sheets</h1>
+            <h2>Big friend of HTML!</h2>
+            <video id="index2" controls="controls">
+                <source src="../_media/one-day.mp4" type="video/mp4" />
+            </video>
+
+
+            <h2>CSS features</h2>
+            <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the
+                process of making web pages presentable. CSS handles the look and feel part of a web page.</p>
+
+            <p>CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It
+                allows one to adapt the presentation to different types of devices, such as large screens, small
+                screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language.</p>
+        </aside>
+
+        <footer id="rodape">
+            <p><a href="https://api.whatsapp.com/send?phone=+4407460031651&text=Hi!, Falling in love with all the informations through this website."
+                    target="_blank">Whatsapp</a> | <a href="https://www.instagram.com/allansrezende/"
+                    target="_blank">Instagram</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

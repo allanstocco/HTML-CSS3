@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-CSS-JS</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <script src="_javascript/funcoes.js"></script>
+    <link rel="stylesheet" type="text/css" href="_css/fotos.css" />
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>HTML, CSS, JS</h1>
+                <h2>Playing with them in a old way!</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/Fotos.png" />
+
+            <nav id="menu">
+                <h1>Pictures</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('_imagens/Home.png')"
+                        onmouseout="mudaFoto('_imagens/Fotos.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('_imagens/Fotos.png')"><a href="index.html"><a
+                                href="specs.html">Details</a></li>
+                    <li onmouseover="mudaFoto('_imagens/Fotos.png')"
+                        onmouseout="mudaFoto('_imagens/Fotos.png')"><a href="index.html"><a
+                                href="fotos.html">Codes</a></li>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('_imagens/Fotos.png')"><a href="index.html"><a
+                                href="multimidia.html">Watch About</a></li>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('_imagens/Fotos.png')"><a href="index.html"><a
+                                href="fale-conosco.html">E-mail Me!</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpofull">
+            <article id="noticiaprin">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>From Wikipedia, the free encyclopedia.</h3>
+                        <h1>Some Codes!</h1>
+                        <h2>Allan S. Rezende</h2>
+                        <h3 class="direita"></h3>
+                    </hgroup>
+                </header>
+
+
+
+                <p>Take a look of them all!</p>
+                <ul id="album-fotos">
+                    <li id="foto01"><span>HTML codes</li></span>
+                    <li id="foto02"><span>HTML codes</li></span>
+                    <li id="foto03"><span>CSS codes</li></span>
+                    <li id="foto04"><span>HTML codes</li></span>
+                    <li id="foto05"><span>JS codes</li></span>
+                    <li id="foto06"><span>JS codes</li></span>
+                </ul>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p><a href="https://api.whatsapp.com/send?phone=+4407460031651&text=Hi!, Falling in love with all the informations through this website."
+                    target="_blank">Whatsapp</a> | <a href="https://www.instagram.com/allansrezende/"
+                    target="_blank">Instagram</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
